@@ -1,0 +1,22 @@
+{
+  "name": "nasa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "npm install --perfix server",
+    "install-client": "npm install --perfix client",
+    "install": "npm run install-server && npm run install-client",
+    "server": "npm run dev --prefix server",
+    "client": "npm start --prefix client",
+    "dev": "start npm run server && start npm run client",
+    "deploy": "npm run build --prefix client && npm start --prefix server ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "client": "^0.0.1",
+    "server": "^1.0.37"
+  }
+}
